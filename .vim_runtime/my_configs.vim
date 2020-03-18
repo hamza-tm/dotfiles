@@ -1,7 +1,17 @@
+" Fast switch directories
 map <leader>cw :cd ~/shortbite/web-projects<cr>
 map <leader>ca :cd ~/shortbite/web-projects/packages/angular-workspace<cr>
 
-""""""""""""""""""""""""""""""""""""""""""""""""
+" Fix syntax highlighting for jsonc (JSON with comments)
+autocmd FileType json syntax match Comment +\/\/.\+$+
+
+" How long should vim wait for the next key before executing what it already has?
+set notimeout         " Wait forever if there is a possible upcoming mapping key
+set ttimeout          " Don't wait forever if there is an upcoming terminal key
+set ttimeoutlen=5     " Wait 5ms in fact
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""
 " Coc.Neovim
 """"""""""""""""""""""""""""""""""""""""""""""""
 
@@ -145,3 +155,4 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
