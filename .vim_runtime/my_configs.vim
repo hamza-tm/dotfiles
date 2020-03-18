@@ -1,6 +1,10 @@
 map <leader>cw :cd ~/shortbite/web-projects<cr>
 map <leader>ca :cd ~/shortbite/web-projects/packages/angular-workspace<cr>
 
+" Fix syntax highlighting for jsonc (JSON with comments)
+autocmd FileType json syntax match Comment +\/\/.\+$+
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Coc.Neovim
 """"""""""""""""""""""""""""""""""""""""""""""""
