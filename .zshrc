@@ -5,10 +5,11 @@
 case "$OSTYPE" in
     darwin*)
         export ZSH="/Users/hamza/.oh-my-zsh"
-        alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+        plugins=(git yarn nvm ng kubectl colored-man-pages colorize pip python brew osx zsh-syntax-highlighting zsh-autosuggestions)
     ;;
     linux*)
         export ZSH="/home/hamza/.oh-my-zsh"
+        plugins=(git yarn nvm ng kubectl colored-man-pages colorize pip python zsh-syntax-highlighting zsh-autosuggestions)
     ;;
 esac
 
@@ -76,7 +77,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git yarn nvm ng kubectl colored-man-pages colorize pip python brew osx zsh-syntax-highlighting zsh-autosuggestions)
+# plugins=(git yarn nvm ng kubectl colored-man-pages colorize pip python brew osx zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,3 +106,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
