@@ -2,7 +2,15 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/hamza/.oh-my-zsh"
+case "$OSTYPE" in
+    darwin*)
+        export ZSH="/Users/hamza/.oh-my-zsh"
+        alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+    ;;
+    linux*)
+        export ZSH="/home/hamza/.oh-my-zsh"
+    ;;
+esac
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -68,7 +76,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git yarn nvm ng kubectl colored-man-pages colorize pip python zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git yarn nvm ng kubectl colored-man-pages colorize pip python brew osx zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,4 +105,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
