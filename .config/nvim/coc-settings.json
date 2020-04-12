@@ -6,8 +6,12 @@
         "javascript",
         "typescript",
         "python",
-        "html"
+        "html",
+        "yml",
+        "yaml"
     ],
     "prettier.trailingComma": "all",
-    "prettier.tabWidth": 4
+    "prettier.tabWidth": 4,
+    "prettier.arrowParens": "avoid",
+    "prettier.singleQuote": true
 }

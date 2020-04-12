@@ -10,6 +10,14 @@ set notimeout         " Wait forever if there is a possible upcoming mapping key
 set ttimeout          " Don't wait forever if there is an upcoming terminal key
 set ttimeoutlen=5     " Wait 5ms in fact
 
+" peaksea, iceberg, codedark, OceanicNext, dark_plus, ir_black, pyte, solarized, mayansmoke, palenight
+colorscheme palenight
+
+" Buffer splits
+nmap <leader>sh  :leftabove  vnew<CR>
+nmap <leader>sl  :rightbelow vnew<CR>
+nmap <leader>sk  :leftabove  new<CR>
+nmap <leader>sj  :rightbelow new<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""
 " Coc.Neovim
@@ -90,8 +98,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>rn <Plug>(coc-rename)
 
 " Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+" xmap <leader>f  <Plug>(coc-format-selected)
+" nmap <leader>f  <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!

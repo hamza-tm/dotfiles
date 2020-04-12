@@ -108,3 +108,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias vim=nvim
+
+path+=('/opt/rider/bin')
+path+=('/home/hamza/bin')
