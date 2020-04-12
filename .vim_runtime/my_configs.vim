@@ -10,8 +10,8 @@ set notimeout         " Wait forever if there is a possible upcoming mapping key
 set ttimeout          " Don't wait forever if there is an upcoming terminal key
 set ttimeoutlen=5     " Wait 5ms in fact
 
-" peaksea, iceberg, codedark, OceanicNext, dark_plus, ir_black, pyte, solarized, mayansmoke, palenight
-colorscheme palenight
+" peaksea, iceberg, codedark, OceanicNext, dark_plus, ir_black, pyte, solarized, mayansmoke, palenight, onedark
+colorscheme onedark
 
 " Buffer splits
 nmap <leader>sh  :leftabove  vnew<CR>
