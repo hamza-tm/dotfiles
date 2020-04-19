@@ -1,5 +1,20 @@
 # dotfiles
-Version control $HOME/ configuration files
+Version control $HOME/ configuration files. Guide here: https://www.anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html
+
+To set up on a new machine
+  * zsh and oh-my-zsh! (`sudo apt-get install zsh`, `curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh`)
+  * nvim
+  * `git clone --separate-git-dir=$HOME/dotfiles https://github.com/hamza-tm/dotfiles.git ~`
+  * run vim, ignore all the errors, `:PlugInstall`
+
+Alternative if git clone doesn't work:
+```
+git clone --separate-git-dir=$HOME/.dotfiles https://github.com/anandpiyer/.dotfiles.git tmpdotfiles
+rsync --recursive --verbose --exclude '.git' tmpdotfiles/ $HOME/
+rm -r tmpdotfiles
+```
+
+## Notes
 
 Using vim-plug to manage vim plugins. Regular maintenance: https://github.com/junegunn/vim-plug#commands
 Mainly:
