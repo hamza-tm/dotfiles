@@ -6,6 +6,8 @@ To set up on a new machine
   * nvim
   * `git clone --separate-git-dir=$HOME/dotfiles https://github.com/hamza-tm/dotfiles.git ~`
   * run vim, ignore all the errors, `:PlugInstall`
+  * lazygit
+  * Hack font
 
 Alternative if git clone doesn't work:
 ```
