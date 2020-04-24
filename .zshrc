@@ -5,11 +5,11 @@
 case "$OSTYPE" in
     darwin*)
         export ZSH="/Users/hamza/.oh-my-zsh"
-        plugins=(git yarn nvm ng kubectl colored-man-pages colorize pip python brew osx zsh-syntax-highlighting zsh-autosuggestions)
+        plugins=(git yarn nvm ng kubectl helm colored-man-pages colorize pip python brew osx zsh-syntax-highlighting zsh-autosuggestions)
     ;;
     linux*)
         export ZSH="/home/hamza/.oh-my-zsh"
-        plugins=(git yarn nvm ng kubectl colored-man-pages colorize pip python zsh-syntax-highlighting zsh-autosuggestions)
+        plugins=(git yarn nvm ng kubectl helm colored-man-pages colorize pip python zsh-syntax-highlighting zsh-autosuggestions asdf)
     ;;
 esac
 
@@ -109,5 +109,7 @@ source $ZSH/oh-my-zsh.sh
 alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias vim=nvim
 
-path+=('/opt/rider/bin')
-path+=('/home/hamza/bin')
+path+=('/opt/rider/bin') # Jetbrains Rider
+path+=('/home/hamza/bin') # aws version of kubectl
+
+source <(doctl completion zsh) # Digital Ocean doctl autocompletion
