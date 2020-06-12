@@ -3,6 +3,9 @@ Version control $HOME/ configuration files. Guide here: https://www.anand-iyer.c
 
 To set up on a new machine
   * zsh and oh-my-zsh! (`sudo apt-get install zsh`, `curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh`)
+  * zsh plugins, manually:
+    * `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+    * `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
   * nvim
   * `git clone --separate-git-dir=$HOME/dotfiles https://github.com/hamza-tm/dotfiles.git ~`
   * run vim, ignore all the errors, `:PlugInstall`
