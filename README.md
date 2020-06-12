@@ -11,7 +11,7 @@ To set up on a new machine
 
 Alternative if git clone doesn't work:
 ```
-git clone --separate-git-dir=$HOME/.dotfiles https://github.com/anandpiyer/.dotfiles.git tmpdotfiles
+git clone --separate-git-dir=$HOME/dotfiles https://github.com/hamza-tm/dotfiles.git tmpdotfiles
 rsync --recursive --verbose --exclude '.git' tmpdotfiles/ $HOME/
 rm -r tmpdotfiles
 ```
