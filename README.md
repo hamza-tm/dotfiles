@@ -1,7 +1,7 @@
 # dotfiles
 Version control $HOME/ configuration files. Guide here: https://www.anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html
 
-To set up on a new machine
+To set up on a new windows machine (wsl)
   * zsh (`sudo apt-get install zsh`)
   * oh-my-zsh! (`curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh`)
   * zsh plugins, manually using oh-my-zsh as plugin manager:
@@ -15,6 +15,8 @@ To set up on a new machine
     * `sudo apt-get update`
     * `sudo apt-get install lazygit`
   * Hack font
+    * Install for windows, then set in terminal properties
+  * Yarn (`npm install -g yarn`) see https://yarnpkg.com/getting-started/install
 
 Alternative if git clone doesn't work:
 ```
