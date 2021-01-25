@@ -7,10 +7,13 @@ To set up on a new machine
   * zsh plugins, manually using oh-my-zsh as plugin manager:
     * `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
     * `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
-  * nvim
+  * nvim (`sudo apt-get install neovim`)
   * `git clone --separate-git-dir=$HOME/dotfiles git@github.com:hamza-tm/dotfiles.git ~`
   * run vim, ignore all the errors, `:PlugInstall`
   * lazygit
+    * `sudo add-apt-repository ppa:lazygit-team/release`
+    * `sudo apt-get update`
+    * `sudo apt-get install lazygit`
   * Hack font
 
 Alternative if git clone doesn't work:
