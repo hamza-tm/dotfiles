@@ -9,14 +9,18 @@ To set up on a new windows machine (wsl)
     * `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
   * nvim (`sudo apt-get install neovim`)
   * `git clone --separate-git-dir=$HOME/dotfiles git@github.com:hamza-tm/dotfiles.git ~`
+  * nvm (open zsh, then `nvm install 12`)
+  * Yarn (`npm install -g yarn`) see https://yarnpkg.com/getting-started/install
   * run vim, ignore all the errors, `:PlugInstall`
+  * Install coc packages
+    * `cd /home/hamza/.config/coc/extensions/`
+    * `yarn`
   * lazygit
     * `sudo add-apt-repository ppa:lazygit-team/release`
     * `sudo apt-get update`
     * `sudo apt-get install lazygit`
   * Hack font
     * Install for windows, then set in terminal properties
-  * Yarn (`npm install -g yarn`) see https://yarnpkg.com/getting-started/install
 
 Alternative if git clone doesn't work:
 ```
