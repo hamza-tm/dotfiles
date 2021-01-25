@@ -2,16 +2,20 @@
 Version control $HOME/ configuration files. Guide here: https://www.anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html
 
 To set up on a new machine
-  * zsh and oh-my-zsh! (`sudo apt-get install zsh`, `curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh`)
+  * zsh (`sudo apt-get install zsh`)
+  * oh-my-zsh! (`curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh`)
+  * zsh plugins, manually using oh-my-zsh as plugin manager:
+    * `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+    * `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
   * nvim
-  * `git clone --separate-git-dir=$HOME/dotfiles https://github.com/hamza-tm/dotfiles.git ~`
+  * `git clone --separate-git-dir=$HOME/dotfiles git@github.com:hamza-tm/dotfiles.git ~`
   * run vim, ignore all the errors, `:PlugInstall`
   * lazygit
   * Hack font
 
 Alternative if git clone doesn't work:
 ```
-git clone --separate-git-dir=$HOME/dotfiles https://github.com/hamza-tm/dotfiles.git tmpdotfiles
+git clone --separate-git-dir=$HOME/dotfiles git@github.com:hamza-tm/dotfiles.git tmpdotfiles
 rsync --recursive --verbose --exclude '.git' tmpdotfiles/ $HOME/
 rm -r tmpdotfiles
 ```
