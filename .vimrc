@@ -42,6 +42,8 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 "" yats doesn't seem to work well with vim-jsx-pretty, according to comments on the internet
 " Plug 'HerringtonDarkholme/yats.vim'
 
+Plug 'APZelos/blamer.nvim'
+
 " Colorschemes
 Plug 'mhartington/oceanic-next'
 Plug 'cocopon/iceberg.vim'
@@ -413,6 +415,9 @@ nmap <leader>sh  :leftabove  vnew<CR>
 nmap <leader>sl  :rightbelow vnew<CR>
 nmap <leader>sk  :leftabove  new<CR>
 nmap <leader>sj  :rightbelow new<CR>
+
+" Use system clipboard by default (Windows when running in WSL) - untested outside of WSL
+set clipboard=unnamedplus
 
 source ~/.vim/vimrcs/plugins_config.vim
 source ~/.vim/vimrcs/extended.vim

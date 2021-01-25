@@ -9,7 +9,7 @@ case "$OSTYPE" in
     ;;
     linux*)
         export ZSH="/home/hamza/.oh-my-zsh"
-        plugins=(git yarn nvm ng kubectl helm colored-man-pages colorize pip python zsh-syntax-highlighting zsh-autosuggestions asdf)
+        plugins=(git yarn nvm ng kubectl helm colored-man-pages colorize pip python zsh-syntax-highlighting zsh-autosuggestions asdf ssh-agent aws )
     ;;
 esac
 
@@ -108,8 +108,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias vim=nvim
+export EDITOR=nvim # adr-tools wants to know which default editor
 
 path+=('/opt/rider/bin') # Jetbrains Rider
 path+=('/home/hamza/bin') # aws version of kubectl
 
 source <(doctl completion zsh) # Digital Ocean doctl autocompletion
+alias rebuild-wp="yarn --cwd ~/shortbite/web-projects nuke && yarn --cwd ~/shortbite/web-projects && yarn --cwd ~/shortbite/web-projects bootstrap && yarn --cwd ~/shortbite/web-projects build:all"

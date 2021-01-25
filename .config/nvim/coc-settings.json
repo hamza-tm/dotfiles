@@ -14,6 +14,7 @@
     "prettier.tabWidth": 4,
     "prettier.arrowParens": "avoid",
     "prettier.singleQuote": true,
+    "python.jediEnabled": false,
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
     "yaml.format.enable": false,
