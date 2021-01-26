@@ -20,8 +20,14 @@ To set up on a new windows machine (wsl)
     * `sudo add-apt-repository ppa:lazygit-team/release`
     * `sudo apt-get update`
     * `sudo apt-get install lazygit`
-  * Hack font
+  * Hack font (so zsh prompt renders correctly)
     * Install for windows, then set in terminal properties
+  * two-way clipboard between wsl vim and Windows
+    * `curl -sLo/tmp/win32yank.zip https://github.com/equalsraf/win32yank/releases/download/v0.0.4/win32yank-x64.zip`
+    * `unzip -p /tmp/win32yank.zip win32yank.exe > /tmp/win32yank.exe`
+    * `chmod +x /tmp/win32yank.exe`
+    * `mv /tmp/win32yank.exe ~/bin`
+
 
 Alternative if git clone doesn't work:
 ```
