@@ -1,17 +1,26 @@
 # dotfiles
 Version control $HOME/ configuration files. Guide here: https://www.anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html
 
-To set up on a new machine
+To set up on a new windows machine (wsl)
   * zsh (`sudo apt-get install zsh`)
   * oh-my-zsh! (`curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh`)
   * zsh plugins, manually using oh-my-zsh as plugin manager:
     * `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
     * `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
-  * nvim
+  * nvim (`sudo apt-get install neovim`)
   * `git clone --separate-git-dir=$HOME/dotfiles git@github.com:hamza-tm/dotfiles.git ~`
+  * nvm (open zsh, then `nvm install 12`)
+  * Yarn (`npm install -g yarn`) see https://yarnpkg.com/getting-started/install
   * run vim, ignore all the errors, `:PlugInstall`
+  * Install coc packages
+    * `cd /home/hamza/.config/coc/extensions/`
+    * `yarn`
   * lazygit
+    * `sudo add-apt-repository ppa:lazygit-team/release`
+    * `sudo apt-get update`
+    * `sudo apt-get install lazygit`
   * Hack font
+    * Install for windows, then set in terminal properties
 
 Alternative if git clone doesn't work:
 ```
