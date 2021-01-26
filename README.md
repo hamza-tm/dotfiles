@@ -8,6 +8,7 @@ To set up on a new windows machine (wsl)
     * `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
     * `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
   * nvim (`sudo apt-get install neovim`)
+  * tmux plugin manager (`git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`) (used by tmux conf in dotfiles)
   * `git clone --separate-git-dir=$HOME/dotfiles git@github.com:hamza-tm/dotfiles.git ~`
   * nvm (open zsh, then `nvm install 12`)
   * Yarn (`npm install -g yarn`) see https://yarnpkg.com/getting-started/install
