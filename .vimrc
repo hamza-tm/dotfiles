@@ -392,7 +392,7 @@ map <leader>cd :cd %:p:h<cr>:pwd<cr>
 map <leader>cw :cd ~/shortbite/web-projects<cr>
 map <leader>ca :cd ~/shortbite/web-projects/packages/angular-workspace<cr>
 
-"" Quickly open a buffer for scribble
+" Quickly open a buffer for scribble
 map <leader>q :e ~/buffer<cr>
 
 " Quickly open a markdown buffer for scribble
@@ -416,8 +416,14 @@ nmap <leader>sl  :rightbelow vnew<CR>
 nmap <leader>sk  :leftabove  new<CR>
 nmap <leader>sj  :rightbelow new<CR>
 
-" Use system clipboard by default (Windows when running in WSL) - untested outside of WSL
-set clipboard=unnamedplus
+" WSL yank support
+let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
+if executable(s:clip)
+    augroup WSLYank
+            autocmd!
+            autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @0) | endif
+    augroup END
+endif
 
 source ~/.vim/vimrcs/plugins_config.vim
 source ~/.vim/vimrcs/extended.vim
