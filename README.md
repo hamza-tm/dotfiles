@@ -10,7 +10,7 @@ To set up on a new windows machine (wsl)
   * nvim (`sudo apt-get install neovim`)
   * tmux plugin manager (`git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`) (used by tmux conf in dotfiles)
   * `git clone --separate-git-dir=$HOME/dotfiles git@github.com:hamza-tm/dotfiles.git ~`
-  * nvm (open zsh, then `nvm install 12`)
+  * nvm (open zsh, then `nvm install 14`, would use stable but currently breaks CDK)
   * Yarn (`npm install -g yarn`) see https://yarnpkg.com/getting-started/install
   * run vim, ignore all the errors, `:PlugInstall`
   * Install coc packages
