@@ -16,10 +16,10 @@ To set up on a new windows machine (wsl)
   * Install coc packages
     * `cd /home/hamza/.config/coc/extensions/`
     * `yarn`
-  * lazygit
-    * `sudo add-apt-repository ppa:lazygit-team/release`
-    * `sudo apt-get update`
-    * `sudo apt-get install lazygit`
+  * lazygit via asdf (PPA no longer gets updates on Ubuntu)
+    * `asdf plugin add lazygit`
+    * `asdf install lazygit latest`
+    * `asdf global lazygit latest`
   * Hack font (so zsh prompt renders correctly)
     * Install for windows, then set in terminal properties
   * two-way clipboard between wsl vim and Windows
