@@ -1,24 +1,10 @@
 {
-    "coc.preferences.formatOnSaveFiletypes": [
-        "css",
-        "markdown",
-        "json",
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "python",
-        "html",
-        "yml",
-        "yaml"
-    ],
+    "coc.preferences.formatOnSave": true,
     "prettier.trailingComma": "all",
     "prettier.tabWidth": 4,
     "prettier.arrowParens": "avoid",
     "prettier.singleQuote": true,
-    "python.jediEnabled": false,
-    "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true,
-    "yaml.format.enable": false,
-    "yaml.editor.tabSize": 4
+    "tsserver.log": "verbose",
+    "suggest.noselect": true,
+    "workspace.ignoredFolders": ["$HOME", "$HOME/.cargo/**", "$HOME/.rustup/**"]
 }
